@@ -1,0 +1,57 @@
+{
+  "version": 1, 
+  "name": "threedio-stage",
+  "source_bucket": "threedio-stage-src",
+  "derived_bucket": "threedio-stage-var",
+  "images": [
+    {
+      "name": "asset",
+      "path": "assets",
+      "image_variants": [
+        {
+          "name": "thumb",
+          "path": "thumb",
+          "imgproxy_params": "rs:fit:256:256",
+          "format": "webp"
+        },
+        {
+          "name": "preview",
+          "path": "preview1x",
+          "imgproxy_params": "rs:fit:1024:1024",
+          "format": "webp"
+        }
+      ]
+    },
+    {
+      "name": "asset-creator",
+      "path": "assets",
+      "image_variants": [
+        {
+          "name": "thumb",
+          "path": "thumb",
+          "imgproxy_params": "rs:fit:256:256",
+          "format": "webp"
+        },
+        {
+          "name": "preview",
+          "path": "preview1x",
+          "imgproxy_params": "rs:fit:1024:1024",
+          "format": "webp"
+        },
+        {
+          "name": "thumb_creator_1x",
+          "path": "thumb",
+          "imgproxy_params": "rs:fit:200:200",
+          "format": "webp"
+        },
+        {
+          "name": "thumb_creator_2x",
+          "path": "thumb",
+          "imgproxy_params": "rs:fit:400:400",
+          "format": "webp"
+        }
+      ]
+    }
+  ]
+}
+
